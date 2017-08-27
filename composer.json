@@ -1,0 +1,36 @@
+{
+    "name": "smodav/auth",
+    "description": "Auth boilerplate for laravel",
+    "type": "library",
+    "keywords": ["cms", "packagers", "laravel", "boilerplate"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Mjomba",
+            "email": "smodavprivate@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Auth/Support/helpers.php",
+            "src/Auth/Support/constants.php"
+        ],
+        "psr-4": {
+            "SmoDav\\": "src/"
+        }
+    },
+     "autoload-dev": {
+        "psr-4": {
+            "SmoDav\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "laravel/framework": "^5.0",
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "~5.7"
+    },
+    "minimum-stability": "stable"
+}
