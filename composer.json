@@ -1,8 +1,8 @@
 {
     "name": "smodav/auth",
-    "description": "Auth boilerplate for laravel",
+    "description": "Auth boilerplate with 2fa for laravel",
     "type": "library",
-    "keywords": ["cms", "packagers", "laravel", "boilerplate"],
+    "keywords": ["cms", "packagers", "laravel", "boilerplate", "2fa"],
     "license": "MIT",
     "authors": [
         {
@@ -26,7 +26,8 @@
     },
     "require": {
         "php": ">=5.6.0",
-        "laravel/framework": "^5.0",
+        "bacon/bacon-qr-code": "~1.0",
+        "pragmarx/google2fa": "^2.0"
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
